@@ -7,10 +7,12 @@ const path = require('path');
 const app = express();
 const router = express.Router();
 
+//below:
+//app.listen() starts the server.
+//can also update json file to run server.js after "npm start"
 
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname + '/index.html'));
-    //__dirname : It will resolve to your project folder.
   });
 
 app.use(express.static(__dirname + '/public'))

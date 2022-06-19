@@ -4,7 +4,7 @@
   "description": "This webpage will have basic front and back end functionality. The ability to view the UI, log into an account, store info, and come back to that info after you have signed out and signed back in. (no other user should be able to access your info)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "test test test"
   },
   "repository": {
     "type": "git",
