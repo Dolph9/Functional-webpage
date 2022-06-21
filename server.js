@@ -5,6 +5,8 @@ const path = require('path');
 const app = express();
 const router = express.Router();
 
+const tilt = require('vanilla-tilt')
+
 //below:
 //app.listen() starts the server.
 //can also update json file to run server.js after "npm start"
@@ -16,6 +18,7 @@ router.get('/',function(req,res){
 app.use(express.static(__dirname + '/public'))
 app.use('/', router);
 app.use('/images', express.static('images'));
+app.use('/node_modules/vanilla-tilt/dist', express.static('vanilla-tilt'))
 
 //added middleware to support images in images folder.
 
