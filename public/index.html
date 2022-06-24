@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolph's Webpage</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger.menu.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary
@@ -21,16 +22,15 @@
                     About</a></li>
             </ul>
         </div>
-        <div class="pe-5 d-flex flex-row-reverse">
-            <ul style="list-style: none;">
-                <li style="white-space: nowrap;">
-                    <a class="link-dark" style="text-decoration: none;" href="">
-                    Contact</a></li>
-            </ul>
-            <ul style="list-style: none;">
-                <li style="white-space: nowrap;">
-                    <a class="link-dark" style="text-decoration: none;" href="">
-                    Sign In</a></li>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box" style="list-style: none;">
+                <li class="menu__top"> Menu </li>
+                <li><a class="menu__item" href="#">Sign In</a></li>
+                <li><a class="menu__item" href="/contact.html">Contact</a></li>
             </ul>
         </div>
         <!--nav bar should have about, contact, sign in / sign out-->
