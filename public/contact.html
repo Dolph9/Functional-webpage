@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary
-    d-flex justify-content-between ">
+    d-flex justify-content-between " style="position: fixed; top: 0; width: 100%; margin-bottom: 30px;">
         <div class="pe-5 d-flex flex-row">
             <ul style="list-style: none;">
                 <li class=""><a class="link-dark" style="text-decoration: none;" href="/index.html">
@@ -34,15 +34,40 @@
             </ul>
         </div>
     </nav>
-    <div class="container pt-5 d-flex justify-content-center">
-        <div class="card text-white bg-dark mb-3" style="max-width: 23rem;">
-            <div class="card-header">
-                Contact
+    <div class="form-group pt-5 d-flex justify-content-center" style="align-items: center; flex-direction: column;">
+        <form style="margin-top: 70px;">
+            <div style="text-align: center;"><h2>CONTACT US</h2></div>
+            <div class="form-group"> 
+                <ul style="list-style: none; text-align: center;">
+                    <li><label for="Name" class="form-label mt-4">Name</label></li>
+                    <li><input type="text" class="form-control" id="name" placeholder=""></li> 
+                </ul>
             </div>
-            <div class="card-body">
-                Contact info will be added
+            <div class="form-group">
+                <ul style="list-style: none; text-align: center;">
+                    <li><label for="email1" class="form-label mt-4">Email address</label></li>
+                    <li><input class="form-control" type="email" id="email" placeholder=""></li>
+                </ul>
             </div>
-        </div>
+            <div class="form-group">
+                <ul style="list-style: none; text-align: center;">
+                    <li><label for="subject" class="form-label mt-4">Subject</label></li>
+                    <li><input class="form-control" type="text" id="subject" placeholder=""></li>
+                </ul>
+                
+            </div>
+            <div class="form-group">
+                <ul style="list-style: none; text-align: center;">
+                    <li><label for="message" class="form-label mt-4">Message</label></li>
+                    <li><textarea class="form-control" id="message" placeholder="" cols="20" rows="10"></textarea></li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <ul style="list-style: none; text-align: center;">
+                    <li><input class="form-control" type="submit" class="submit" value="Send Message"></li>
+                </ul>
+            </div>
+        </form>
     </div>
 </body>
 </html>
